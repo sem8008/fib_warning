@@ -1,5 +1,5 @@
 import discord
-
+import os
 client = discord.Client()
 
 
@@ -28,4 +28,5 @@ async def on_message(message):
         await message.channel.send("관리자 모집은 재능이 있으시다고 생각되시면 FIB WARNING으로 연락해주세요!")
 
 
-client.run("NjgzNzAzMDg4MzIxNjU4OTMz.XlySDg.4f2WwQe3owRTyzxoHAeCelq6YL8")
+access_token = os.environ["BOT_TOKEN"]
+client.run("access_token")
